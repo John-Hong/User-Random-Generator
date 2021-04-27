@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Random User Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+    <img v-bind:src="picture" id="pro_img" alt="Face">
+    <h1>Name: {{firstName}} {{lastName}}</h1>
+    <h3>Email: {{email}}</h3>
+    <h3>{{gender}}</h3>
+    <button :class="gender" v-on:click="getUser()">Generate Random User</button>
+
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
